@@ -7,6 +7,9 @@ authors = ["Niten Nashiki <niten.nashiki@lightz-inc.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 azure-functions = "^1.10.1"
+backlog-schema = "^0.1.1"
+pydantic = "^1.9.0"
+azure-devops = "^6.0.0-beta.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -40,7 +43,7 @@ profile = "black"
 black = "black ."
 isort = "isort ."
 # poetry run task test
-test = "pytest ."
+test = "pytest .  --log-cli-level=DEBUG"
 # poetry run task fmt
 fmt = { cmd = "task black && task isort", help = "format code" }
 
