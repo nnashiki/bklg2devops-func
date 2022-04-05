@@ -61,7 +61,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
               devops_project_id=os.environ['DEVOPS_PROJECT_ID'],
               backlog_org=os.environ['BACKLOG_ORG'],
               backlog_project_key=add_task_req.project.projectKey,
-              backlog_task_id=add_task_req.content.id,
+              backlog_task_id=add_task_req.content.key_id,
               task_title=add_task_req.content.summary,
               task_desc=add_task_req.content.description)
 
