@@ -1,6 +1,6 @@
 # bklg2devops-func
 
-backlog.com の登録課題を Webhook で Azure Functions で捌いて Azure Devops に連携する
+backlog.com の登録課題を Webhook で Azure Functions で捌いて Azure DevOps に連携する
 
 ![](header.png)
 
